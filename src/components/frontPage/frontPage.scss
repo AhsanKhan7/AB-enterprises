@@ -1,0 +1,154 @@
+.frontPage {
+  width: 100%;
+}
+
+.think {
+  padding-top: 50px;
+  display: flex;
+  background-color: black;
+}
+@media (max-width: 450px) {
+  .think {
+    display: block;
+  }
+}
+
+.lottie {
+  margin-right: 100px;
+}
+@media (max-width: 450px) {
+  .lottie {
+    padding-bottom: 20px;
+  }
+}
+
+.frontLogo {
+  align-items: center;
+  justify-content: center;
+}
+
+.frontLogo h3 {
+  padding-left: 60px;
+  padding-right: 250px;
+  font-family: sans-serif;
+  text-align: center;
+  color: white;
+  font-size: 100px;
+}
+
+.frontLogo span:before {
+  font-size: 100px;
+  content: "";
+  color: grey;
+  animation: animation 5s linear infinite;
+}
+@keyframes animation {
+  0%,
+  100% {
+    content: "books";
+  }
+  20% {
+    content: "tags";
+  }
+  40% {
+    content: "cards";
+  }
+  60% {
+    content: "labels";
+  }
+  80% {
+    content: "layout";
+  }
+}
+
+.middlePage {
+  background: #dbdbdb;
+}
+
+.middleText {
+  font-family: "Montserrat", sans-serif;
+  // font-family: 'Open Sans', sans-serif;
+  margin-left: 100px;
+  font-size: 42px;
+  padding-top: 12px;
+}
+
+.middlePic {
+  display: flex;
+  margin-top: 80px;
+  padding-bottom: 55px;
+  justify-content: center;
+}
+@media (max-width: 450px) {
+  .middleText {
+    margin-left: 10px;
+  }
+
+  .middlePic {
+    display: grid;
+    margin-right: 40px;
+    grid-template-columns: repeat(2, 2fr);
+    grid-row-gap: 20px;
+  }
+
+  .mid {
+    margin-left: 70px;
+  }
+}
+
+.middleQuote {
+  font-family: sans-serif;
+  margin-top: 80px;
+}
+
+.middleQuote h2 {
+  text-align: center;
+}
+
+.middleQuote h3 {
+  margin-top: 50px;
+  margin-right: 20px;
+  margin-left: 20px;
+  text-align: center;
+}
+
+.features {
+  background: black;
+  color: white;
+  font-family: sans-serif;
+  padding-top: 20px;
+  padding-bottom: 100px;
+  margin-top: 40px;
+  font-size: 20px;
+}
+
+.features > h3 {
+  font-size: 40px;
+  text-align: center;
+}
+
+.features_pics {
+  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(3, 410px);
+  grid-gap: 10px;
+}
+
+.features-pics > img {
+  border-radius: 10px;
+  width: 400px;
+  height: 200px;
+}
+
+@media (max-width: 450px) {
+  .features {
+    margin-top: 20px;
+    padding-bottom: 40px;
+  }
+  .features > h3 {
+    font-size: 30px;
+  }
+  .features-pics {
+    display: block;
+  }
+}

@@ -1,0 +1,52 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    font-family: sans-serif;
+    width: 100%;
+    background-color: black;
+    padding-bottom: 40px;
+    margin-top: 90px;
+    color: white;
+}
+// @media (max-width: 400px) {
+//     .footer {
+//         display: none;
+//     }
+// }
+
+.footer_logo {
+    padding-top: 30px;
+    margin-left: 120px;
+}
+
+.footer_desription {
+    text-align: justify;
+    margin-top: 20px;
+    margin-right: 1000px;
+    margin-left: 40px;
+}
+
+.footer_projects {
+    position: absolute;
+    padding-top: 30px;
+    margin-left: 700px;
+}
+
+.footer_project_elements {
+    position: absolute;
+    padding-top: 90px;
+    margin-left: 700px;
+}
+
+.footer_contacts {
+    position: absolute;
+    padding-bottom: 20px;
+    padding-top: 30px;
+    margin-left: 1000px;
+}
+
+.footer_contact_elements {
+    position: absolute;
+    padding-top: 90px;
+    margin-left: 1000px;
+}

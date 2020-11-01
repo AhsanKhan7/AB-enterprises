@@ -1,0 +1,32 @@
+@media only screen and (min-width: 768px) {
+  .menuButton {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  /* phones */
+
+  //   write css here
+  .menuButton {
+    display: flex;
+    height: 50px !important;
+    background-color: white;
+
+    text-align: center;
+    .togButton {
+      margin-top: 10px;
+      margin-right: 130px;
+      margin-left: 20px;
+      button {
+        background-color: transparent !important;
+        border: none !important;
+        color: red !important;
+        font-size: 20px;
+        font-weight: 800;
+      }
+    }
+    .smLogo {
+    }
+  }
+}
