@@ -74,6 +74,15 @@ const FirstPage = () => {
         </h3>
       </div>
 
+      <div style={{ marginTop: "-120px" }}>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+          <path
+            fill="#273036"
+            fill-opacity="1"
+            d="M0,320L1440,160L1440,320L0,320Z"
+          ></path>
+        </svg>
+      </div>
       <div className="features">
         <h3>
           Our <span style={{ color: "gray" }}>FEATURE</span> prints
@@ -85,6 +94,15 @@ const FirstPage = () => {
           <img src={pro4} alt="pic" />
           <img src={pro5} alt="pic" />
         </div>
+      </div>
+      <div style={{ marginBottom: "-180px" }}>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+          <path
+            fill="#273036"
+            fill-opacity="1"
+            d="M0,96L1440,0L1440,0L0,0Z"
+          ></path>
+        </svg>
       </div>
     </div>
   );

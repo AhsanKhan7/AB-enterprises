@@ -42,7 +42,7 @@ const Product = () => {
             }}
             style={{ background: "darkgray" }}
           >
-            <span style={{ color: "black" }}>Labels</span>
+            <span style={{ color: "#273036" }}>Labels</span>
           </NavLink>
         </NavItem>
         <NavItem>
@@ -53,7 +53,7 @@ const Product = () => {
             }}
             style={{ background: "darkgray" }}
           >
-            <span style={{ color: "black" }}>Books</span>
+            <span style={{ color: "#273036" }}>Books</span>
           </NavLink>
         </NavItem>
         <NavItem>
@@ -64,7 +64,7 @@ const Product = () => {
             }}
             style={{ background: "darkgray" }}
           >
-            <span style={{ color: "black" }}>Tags</span>
+            <span style={{ color: "#273036" }}>Tags</span>
           </NavLink>
         </NavItem>
       </Nav>
