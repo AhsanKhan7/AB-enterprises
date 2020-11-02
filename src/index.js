@@ -8,4 +8,4 @@ import Product from "./components/product/product";
 import Contact from "./components/contact/contact";
 import About from "./components/about/about";
 
-ReactDOM.render(<Product />, document.getElementById("root"));
+ReactDOM.render(<Home />, document.getElementById("root"));

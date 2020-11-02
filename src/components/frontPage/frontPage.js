@@ -44,6 +44,7 @@ const FirstPage = () => {
           <Lottie options={defaultOptions} height={400} width={400} />
         </div>
       </div>
+
       <div className="middlePage">
         <div className="middleText">
           <h3>We are working in 10+ categories</h3>

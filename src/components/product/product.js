@@ -7,7 +7,7 @@ import pro3 from "../../Assets/pro3.jpg";
 import pro4 from "../../Assets/pro4.jpg";
 import pro5 from "../../Assets/pro5.jpg";
 import "./product.scss";
-
+import "bootstrap/dist/css/bootstrap.min.css";
 import {
   TabContent,
   TabPane,
@@ -30,18 +30,19 @@ const Product = () => {
     if (activeTab !== tab) setActiveTab(tab);
   };
   return (
-    <div>
+    <div className="product">
       <Header />
 
-      <Nav tabs>
+      <Nav className="nav" tabs>
         <NavItem>
           <NavLink
             className={classnames({ active: activeTab === "1" })}
             onClick={() => {
               toggle("1");
             }}
+            style={{ background: "darkgray" }}
           >
-            Tab1
+            <span style={{ color: "black" }}>Labels</span>
           </NavLink>
         </NavItem>
         <NavItem>
@@ -50,81 +51,61 @@ const Product = () => {
             onClick={() => {
               toggle("2");
             }}
+            style={{ background: "darkgray" }}
           >
-            More Tabs
+            <span style={{ color: "black" }}>Books</span>
+          </NavLink>
+        </NavItem>
+        <NavItem>
+          <NavLink
+            className={classnames({ active: activeTab === "3" })}
+            onClick={() => {
+              toggle("3");
+            }}
+            style={{ background: "darkgray" }}
+          >
+            <span style={{ color: "black" }}>Tags</span>
           </NavLink>
         </NavItem>
       </Nav>
       <TabContent activeTab={activeTab}>
         <TabPane tabId="1">
-          <Row>
-            <Col sm="12">
-              <h4>Tab 1 Contents</h4>
-            </Col>
-          </Row>
+          <div className="label">
+            <h3>Labels</h3>
+            <div className="lab_pics">
+              <img src={pro5} alt="pic" />
+              <img src={pro2} alt="pic" />
+              <img src={pro3} alt="pic" />
+              <img src={pro4} alt="pic" />
+              <img src={pro1} alt="pic" />
+            </div>
+          </div>
         </TabPane>
         <TabPane tabId="2">
-          <Row>
-            <Col sm="6">
-              <Card body>
-                <CardTitle>Special Title Treatment</CardTitle>
-                <CardText>
-                  With supporting text below as a natural lead-in to additional
-                  content.
-                </CardText>
-                <Button>Go somewhere</Button>
-              </Card>
-            </Col>
-            <Col sm="6">
-              <Card body>
-                <CardTitle>Special Title Treatment</CardTitle>
-                <CardText>
-                  With supporting text below as a natural lead-in to additional
-                  content.
-                </CardText>
-                <Button>Go somewhere</Button>
-              </Card>
-            </Col>
-          </Row>
+          <div className="books">
+            <h3>Books</h3>
+            <div className="books_pics">
+              <img src={pro1} alt="pic" />
+              <img src={pro2} alt="pic" />
+              <img src={pro3} alt="pic" />
+              <img src={pro4} alt="pic" />
+              <img src={pro5} alt="pic" />
+            </div>
+          </div>
+        </TabPane>
+        <TabPane tabId="3">
+          <div className="tags">
+            <h3>Tags</h3>
+            <div className="tags_pics">
+              <img src={pro3} alt="pic" />
+              <img src={pro2} alt="pic" />
+              <img src={pro5} alt="pic" />
+              <img src={pro4} alt="pic" />
+              <img src={pro1} alt="pic" />
+            </div>
+          </div>
         </TabPane>
       </TabContent>
-      {/* <div className="product">
-        <div className="label">
-          <h3>/ Labels</h3>
-          <div className="lab_pics">
-            <img src={pro1} alt="pic" />
-            <img src={pro2} alt="pic" />
-            <img src={pro3} alt="pic" />
-            <img src={pro4} alt="pic" />
-            <img src={pro5} alt="pic" />
-          </div>
-        </div>
-        <div style={{ background: "white", color: "white" }}>uu</div>
-
-        <div className="books">
-          <h3>/ Books</h3>
-          <div className="books_pics">
-            <img src={pro1} alt="pic" />
-            <img src={pro2} alt="pic" />
-            <img src={pro3} alt="pic" />
-            <img src={pro4} alt="pic" />
-            <img src={pro5} alt="pic" />
-          </div>
-        </div>
-        <div style={{ background: "white", color: "white" }}>uu</div>
-
-        <div className="tags">
-          <h3>/ Tags</h3>
-          <div className="tags_pics">
-            <img src={pro1} alt="pic" />
-            <img src={pro2} alt="pic" />
-            <img src={pro3} alt="pic" />
-            <img src={pro4} alt="pic" />
-            <img src={pro5} alt="pic" />
-          </div>
-        </div>
-        <div style={{ background: "white", color: "white" }}>uu</div>
-      </div> */}
       <S_footer />
     </div>
   );

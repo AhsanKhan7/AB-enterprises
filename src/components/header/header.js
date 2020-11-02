@@ -7,7 +7,7 @@ const Header = () => {
     <Router>
       <div className="header">
         <nav>
-          <div className="front__title">
+          <div className="nav_item">
             <div style={{ marginLeft: "20px" }}>
               <Link className="title" to="/">
                 <h1>ABDULLAH ENTERPRISES</h1>
